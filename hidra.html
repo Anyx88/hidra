@@ -6,26 +6,28 @@
     <title>HYDRA</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lugrasimo&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilos.css">
+
 </head>
 <body>
     
         <nav>
             <img class="logo" src="logo-hidra.png" alt="logo-hidra">
             <ul>
-                <li>espacio 1</li>
-                <li>espacio 2</li>
-                <li>espacio 3</li>
-                <li>espacio 4</li>
+                <li><a href="procesos.html">Procesos</a></li>
+                <li><a href="quienes_somos.html">Quienes Somos</a></li>
+                <li><a href="construccion.html">Construccion y Prueba</a></li>
+                <li><a href="plan.html">Planificación</a></li>
+                <li><a href="resultados.html">Resultados</a></li>
             </ul>
         </nav>
         <section class="parallax">
         <div class="imagen-parallax"></div>
         </section>
         <main>
-        <h1>HIDRA</h1>
+        <h1 id="titulo"> HIDRA</h1>
         <article class="bloque introduccion">
             <div class="texto">
-                <p>
+                <p id="eslogan">
                     HIDRA es un sistema inteligente diseñado
                     para contribuir al ahorro y uso responsable
                     del agua mediante tecnología Arduino. El
@@ -35,7 +37,6 @@
                     desperdicios.
                 </p>
             </div>
-           
         </article>
         <article class="primero">
             <h2>Problematicas</h2>
@@ -163,5 +164,41 @@
             </div>
         </article>
     </main>
+     <script>
+        // // 1. Conexión con el servidor que emula a Tinkercad
+        // const socket = new WebSocket('ws://localhost:8085');
+
+        
+        // // 2. Elemento de texto opcional por si tienes un id="valor-sensor"
+        // const textoSensor = document.getElementById('valor-sensor');
+
+        // socket.onmessage = function(event) {
+        //     const colorRecibido = event.data; // Recibe "ROJO", "VERDE" o "AZUL"
+            
+        //     if (textoSensor) {
+        //         textoSensor.innerText = "Color: " + colorRecibido;
+        //     }
+
+        //     // 3. Cambiar el color de fondo de TODA la página web de forma limpia
+        //     if (colorRecibido === "ROJO") {
+        //         document.body.style.backgroundColor = "#ff4d4d"; 
+        //     } 
+        //     else if (colorRecibido === "VERDE") {
+        //         document.body.style.backgroundColor = "#2ed573"; 
+        //     } 
+        //     else if (colorRecibido === "AZUL") {
+        //         document.body.style.backgroundColor = "#1e90ff"; 
+        //     }
+        // };
+
+        // socket.onopen = function() {
+        //     console.log("🟢 Conectado con éxito. ¡Listo para cambiar de colores!");
+        // };
+
+        // socket.onerror = function() {
+        //     console.error("🔴 Error de conexión.");
+        // };
+    </script>
+    
 </body>
 </html>

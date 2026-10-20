@@ -87,6 +87,9 @@ h2 {
     color: #167c73;
 }
 
+h1 {text-align: center;}
+.subtitulo{ text-align: center;} 
+
 
 /* PARRAFOS */
 p {
@@ -126,6 +129,7 @@ p {
 
 .texto {
   margin-top: 10px;
+  text-align: center; 
 }
 
 /* diseño */
@@ -181,4 +185,20 @@ nav {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+#eslogan{
+text-align: center;
+font-size: 25px;
+
+}
+#titulo{
+  font-size: 100px;
+  font-family: "Merriweather";
+ color: rgb(26, 148, 10);
+}
+#semanas{ text-align:start; 
+
+}
+html {
+  scroll-behavior: smooth;
 }
