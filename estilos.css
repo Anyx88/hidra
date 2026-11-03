@@ -121,7 +121,7 @@ p {
 
 .tarjeta {
   width: 300px;
-  background: white;
+  background: rgb(211, 201, 201);
   border-radius: 12px;
   padding: 15px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -202,3 +202,12 @@ font-size: 25px;
 html {
   scroll-behavior: smooth;
 }
+.contenedor-imagen {
+    background-image: url('diagrama.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; /* Esto hace que se muestre completa sin recortarse */
+    width: 100%;
+    height: 500px; /* Dale la altura que necesites */
+}
+
